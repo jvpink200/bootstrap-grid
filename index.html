@@ -136,7 +136,7 @@
             </div>
             <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3">
-                    <h2 class="text-sm-right">Discover & Review</h2>
+                    <h2 class="text-sm-right green-text">Discover & Review</h2>
                 </div>
                 <div class="col">
                     <div class="media">
@@ -165,7 +165,7 @@
 
             <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3">
-                    <h2 class="text-sm-right">Our Community Partners</h2>
+                    <h2 class="purple-text text-sm-right">Our Community Partners</h2>
                 </div>
                 <div class="col">
                     <div class="media">
@@ -210,7 +210,7 @@
                                 <!--Third Row-->
                                 <div class="row form-group">
                                     <div class="col">
-                                        <button type="submit" class="btn btn-primary">Search</button>
+                                        <button type="button" class="btn btn-lg btn-info search-popover" data-toggle="popover" title="searching" data-content="Please wait...">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -253,6 +253,12 @@
         <script>
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()
+            })
+
+            $(function () {
+            $('.search-popover').popover({
+                container: 'body'
+                })
             })
         </script>
     </body>
